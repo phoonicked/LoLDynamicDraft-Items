@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const API_KEY = 'RGAPI-00487cca-48b8-4914-8153-b9c9ac7d2621';
+const API_KEY = 'API_KEY';
 
 app.get('/summoner/:gameName/:tagLine', async (req, res) => {
   const { gameName, tagLine } = req.params;
