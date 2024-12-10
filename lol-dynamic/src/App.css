@@ -1,0 +1,146 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #444;
+}
+
+/* Search section */
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #005bb5;
+}
+
+.search button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Match history and analytics */
+.matches, .analytics {
+  margin-top: 20px;
+}
+
+.matches h2, .analytics h2 {
+  margin-bottom: 10px;
+}
+
+.matches ul, .analytics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.matches ul li, .analytics ul li {
+  margin: 5px 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Analytics */
+.analytics h3 {
+  margin-top: 20px;
+  color: #555;
+}
+
+.analytics ul {
+  margin-top: 10px;
+}
+
+.analytics ul li {
+  padding: 10px;
+  background-color: #eaf7ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 5px;
+}
+
+/* Champion input field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border-color: #0078d7;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .App {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .search button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
